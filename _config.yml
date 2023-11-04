@@ -1,0 +1,53 @@
+# Site settings
+title: Jin Zhang's Website
+description: Jin Zhang's Github Website
+url: https://JennyZhang-pku.github.io
+baseurl: ""
+
+# Theme (if you want to use a specific theme)
+# theme: jekyll-theme-name
+
+# Permalinks (choose one)
+# permalink: pretty
+# permalink: date
+# permalink: none
+
+# Markdown processor (GitHub Pages uses kramdown by default)
+# markdown: kramdown
+
+# Navigation links
+nav:
+  - text: Home
+    url: /
+  - text: About
+    url: /about/
+  - text: Contact
+    url: /contact/
+
+# Defaults for posts and pages
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+
+# Additional plugins or custom configurations can be added here
+
+# Exclude files or directories
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - _site
+  - .git
+  - .gitignore
+
+# GitHub Pages settings
+remote_theme: "username/repo-name"
